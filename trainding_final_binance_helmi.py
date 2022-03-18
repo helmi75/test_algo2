@@ -13,30 +13,13 @@ import ccxt
 from fonctions import *
 import fonctions
 import time as tm
+from config import *
 
 
 
 
 crypto ={}
-market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT','TRX/USDT',
-        'EOS/USDT','BCH/USDT','LTC/USDT','LINK/USDT','XLM/USDT','ETH/USDT','BTC/USDT','UNI/USDT','ADA/USDT','DOT/USDT',
-        'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT','SHIB/USDT']#mettre ces crypto pour le cloud  (ETH , ADA, DOT, BNB, DOGE)
 
-
-#piKey = 'qmTxUtKrHMB2lFNGfPk2GUd95no6e5Le7lMwRw09hXZ4i2PYagsi6DUnUBrji7ye'
-#secret = 'ohyEDrltRa4k6WdcaBcwjWgQBMER5CQb7otXfyHpTOMczfuSUJlkHhHmmx78Ukpq'
-
-
-#apiKey = '10BDQIAwXGSlaLIqJUmxB36QU2LnkLsWurrILnTfowNCCqRZP6ih0aXjlSiSPgJV'
-#secret ='ixt1W1kR2gKinfhq0RGoY2SOJh9kZtUDP8yFEMLLA5Yk8Vipzt0KKbk7ATlhB3nk'
-
-apiKey ='UP1oPm9Lcs4L92Wue7vxdVCD40Lgbcr1wV1l8hNlfmZ702LvmvSHyx8Dt9e2iqys'
-secret = '5XePxpjqxvxaNiyIKCfwXvEB5DIMiKO14Z6bjFfJca4aofbMfxXZJkCy9RZWd68z'
-
-
-i_iteration =4
-delta_hour = '8h'
-type_computing ='n-1' #  entrée possible,n-1, n-2 , none
 
 
 exchange = ccxt.binance({
@@ -56,10 +39,10 @@ liste_vente=[]
 temps=[]
 comput_list=[]
 
-# list of crypto to initialise
+# list of crypto to initialize
 init_cryptos = [elm  for elm in market if  pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).shape[0]==0]
 
-#initialisation crypto
+#crypto initialization
 initial =last_crypto_buyed(exchange, market)
 for cypto_ini in init_cryptos:
   print(cypto_ini)

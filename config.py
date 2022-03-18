@@ -3,8 +3,6 @@ market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT',
         'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT','SHIB/USDT']#mettre ces crypto pour le cloud  (ETH , ADA, DOT, BNB, DOGE)
 
 
-
-
 apiKey ='UP1oPm9Lcs4L92Wue7vxdVCD40Lgbcr1wV1l8hNlfmZ702LvmvSHyx8Dt9e2iqys'
 secret = '5XePxpjqxvxaNiyIKCfwXvEB5DIMiKO14Z6bjFfJca4aofbMfxXZJkCy9RZWd68z'
 

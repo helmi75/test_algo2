@@ -322,8 +322,8 @@ def sleep_time(sec):
         tm.sleep(sec)
 
 
-def crypto_a_vendre(exchange, market ):
-    x = (datetime.now()- timedelta(days = 365)).timestamp()*1000
+def crypto_a_vendre(exchange, market):
+    x = (datetime.now()- timedelta(days=365)).timestamp()*1000
     df_hystoric_order={}
     liste_df =[]
     tm.sleep(5)
@@ -350,7 +350,15 @@ def crypto_a_vendre(exchange, market ):
     crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
     return crypto_a_vendre
 
-
+def last_crypto_buyed(exchange, market1):
+  for elm in market1 :  
+      etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+      try :
+        if  etat['side'].values[0]== 'buy':
+          crypto_a_vendre = etat['symbol']
+          return crypto_a_vendre.values[0]
+      except KeyError:
+        pass
 
 
                          

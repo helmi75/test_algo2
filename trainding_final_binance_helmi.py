@@ -20,7 +20,7 @@ import time as tm
 crypto ={}
 market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT','TRX/USDT',
         'EOS/USDT','BCH/USDT','LTC/USDT','LINK/USDT','XLM/USDT','ETH/USDT','BTC/USDT','UNI/USDT','ADA/USDT','DOT/USDT',
-        'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT']#mettre ces crypto pour le cloud  (ETH , ADA, DOT, BNB, DOGE)
+        'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT','SHIB/USDT']#mettre ces crypto pour le cloud  (ETH , ADA, DOT, BNB, DOGE)
 
 
 #piKey = 'qmTxUtKrHMB2lFNGfPk2GUd95no6e5Le7lMwRw09hXZ4i2PYagsi6DUnUBrji7ye'
@@ -57,10 +57,10 @@ temps=[]
 comput_list=[]
 
 # list of crypto to initialise
-init_cryptos = [elm  for elm in market1 if  pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).shape[0]==0]
+init_cryptos = [elm  for elm in market if  pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).shape[0]==0]
 
 #initialisation crypto
-initial =last_crypto_buyed(exchange, market1)
+initial =last_crypto_buyed(exchange, market)
 for cypto_ini in init_cryptos:
   print(cypto_ini)
   algo_achat_vente(exchange , initial, cypto_ini)
@@ -76,7 +76,7 @@ while True:
 
         comput_list=[]
         num_exp= 0
-        for elm in market :/
+        for elm in market :
             x =elm.lower()
             while True:
               try:
@@ -135,7 +135,7 @@ while True:
             tableau_var['coef_multi'] = tableau_var['algo'].cumprod()
             print(tableau_var )
             nom_cryptccxt.base.errors.NetworkErroro_achat =  nom_crypto_achat_vente(tableau_var)
-            print ('le nom de la cripto à acheter ', nom_crypto_achat )5
+            print ('le nom de la cripto à acheter ', nom_crypto_achat )
             nom_crypto_vente = crypto_a_vendre(exchange, market )
             algo_achat_vente(exchange, nom_crypto_vente, nom_crypto_achat)
             print('la crypot à vendre est ',nom_crypto_vente)

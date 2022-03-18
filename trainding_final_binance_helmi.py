@@ -56,6 +56,16 @@ liste_vente=[]
 temps=[]
 comput_list=[]
 
+# list of crypto to initialise
+init_cryptos = [elm  for elm in market1 if  pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).shape[0]==0]
+
+#initialisation crypto
+initial =last_crypto_buyed(exchange, market1)
+for cypto_ini in init_cryptos:
+  print(cypto_ini)
+  algo_achat_vente(exchange , initial, cypto_ini)
+  initial = cypto_ini 
+
 
 while True:
 
@@ -66,7 +76,7 @@ while True:
 
         comput_list=[]
         num_exp= 0
-        for elm in market :
+        for elm in market :/
             x =elm.lower()
             while True:
               try:
@@ -87,6 +97,7 @@ while True:
             #print(crypto[x].merge(variation_computing(crypto[x], type_computing), on ='delt_compt', how ='left'))
             crypto[x]['coef_multi_'+x[:-5]] = coef_multi(crypto[x])
             crypto[x]  = fonction_cumul(crypto[x],x)
+
         df_liste_var =  fonction_tableau_var(crypto)
         tableau_var = meilleur_varaition(df_liste_var)
         concenate_computing = np.concatenate(comput_list, axis=1)
@@ -124,8 +135,8 @@ while True:
             tableau_var['coef_multi'] = tableau_var['algo'].cumprod()
             print(tableau_var )
             nom_cryptccxt.base.errors.NetworkErroro_achat =  nom_crypto_achat_vente(tableau_var)
-            print ('le nom de la cripto à acheter ', nom_crypto_achat )
-            nom_crypto_vente= crypto_a_vendre(exchange, market )
+            print ('le nom de la cripto à acheter ', nom_crypto_achat )5
+            nom_crypto_vente = crypto_a_vendre(exchange, market )
             algo_achat_vente(exchange, nom_crypto_vente, nom_crypto_achat)
             print('la crypot à vendre est ',nom_crypto_vente)
             print('la crypot à acheter est ',nom_crypto_achat)

@@ -4,7 +4,7 @@ add a config.py file in the same directory whith this information.
 <code>
 
 ####################### file start #######################
-### crypto combination
+#### crypto combination
 market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT','TRX/USDT',
         'EOS/USDT','BCH/USDT','LTC/USDT','LINK/USDT','XLM/USDT','ETH/USDT','BTC/USDT','UNI/USDT','ADA/USDT','DOT/USDT',
         'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT','SHIB/USDT']

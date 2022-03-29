@@ -11,7 +11,7 @@ market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT',
         'KSM/USDT','BNB/USDT','XRP/USDT','DOGE/USDT','EGLD/USDT','ATOM/USDT','SHIB/USDT']
 
 
-apiKey ='your aip key '
+apiKey ='your api key '
         
         
 secret = 'your secret key'

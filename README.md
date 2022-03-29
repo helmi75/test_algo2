@@ -12,6 +12,8 @@ market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT',
 
 
 apiKey ='your aip key '
+        
+        
 secret = 'your secret key'
 
 

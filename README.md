@@ -1,7 +1,7 @@
 # test_algo2
 
 add a config.py file in the same directory whith this information .
-
+<code>
 #################################################### file start #######################################################################
 # crypto combination
 market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT','TRX/USDT',
@@ -21,4 +21,7 @@ delta_hour = '8h'
 type_computing ='n-1' 
 
 
+
+
 #################################################### end of file #######################################################################
+</code>

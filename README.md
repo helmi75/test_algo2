@@ -1,8 +1,9 @@
 # test_algo2
 
-add a config.py file in the same directory whith this information\n .
+add a config.py file in the same directory whith this information.
 <code>
-#################################################### file start #######################################################################
+\n
+####################### file start #######################
 # crypto combination
 market=['AAVE/USDT','LUNA/USDT','MATIC/USDT','THETA/USDT','VET/USDT','SOL/USDT','TRX/USDT',
         'EOS/USDT','BCH/USDT','LTC/USDT','LINK/USDT','XLM/USDT','ETH/USDT','BTC/USDT','UNI/USDT','ADA/USDT','DOT/USDT',
@@ -23,5 +24,5 @@ type_computing ='n-1'
 
 
 
-#################################################### end of file #######################################################################
+###################### end of file ###########################
 </code>

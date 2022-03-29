@@ -1,6 +1,6 @@
 # test_algo2
 
-add a config.py file in the same directory whith this information .
+add a config.py file in the same directory whith this information\n .
 <code>
 #################################################### file start #######################################################################
 # crypto combination

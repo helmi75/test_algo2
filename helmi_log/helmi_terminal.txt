@@ -1,0 +1,1205 @@
+première iteration  :  2022-03-30 19:02:04.074700
+horaire now 2022-03-30 19:02:24.181959
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   1.002243   0.996240  ...   1.008601   0.993419
+1 days 00:00:00   1.094025   1.025975  ...   1.000000   0.999632
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  VET/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.1429951690821256 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-29 16:00:00+00:00  1.090597  1.029753  ...  1.090597       aav_var
+2022-03-30 00:00:00+00:00  1.075370  0.976245  ...  1.075370       aav_var
+2022-03-30 08:00:00+00:00  0.931610  1.020385  ...  1.091791       sol_var
+2022-03-30 16:00:00+00:00  1.014324  1.000000  ...  1.019900       dot_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+164
+VET/USDT
+87
+SOL/USDT
+174
+TRX/USDT
+71
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-02-17T02:51:22.593Z  sell   90.409200
+VET/USDT    2022-03-30T17:03:02.331Z   buy   89.212788
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-02-24T19:18:03.861Z  sell   69.861164
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 2.73959996
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+on reste sur la même crypto
+
+
+
+
+ la crypot à vendre est  VET/USDT
+
+
+
+
+ la crypot à vendre est  VET/USDT
+la crypot à acheter est  VET/USDT
+                       temps crypto vente crypto achat
+0 2022-03-30 19:02:48.091396     VET/USDT     VET/USDT
+
+
+ On reste sur la même crypto
+execution done
+première iteration  :  2022-03-31 03:02:02.818046
+horaire now 2022-03-31 03:02:22.033737
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   0.930776   0.996148  ...   0.985246   0.997093
+1 days 00:00:00   1.001346   0.972576  ...   0.994046   1.003291
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  VET/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.107904316172647 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-30 00:00:00+00:00  1.075370  0.976245  ...  1.075370       aav_var
+2022-03-30 08:00:00+00:00  0.931610  1.020385  ...  1.091791       sol_var
+2022-03-30 16:00:00+00:00  0.999105  0.976247  ...  1.029476       vet_var
+2022-03-31 00:00:00+00:00  0.997761  1.005563  ...  1.057118       uni_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+164
+VET/USDT
+87
+SOL/USDT
+174
+TRX/USDT
+71
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-02-17T02:51:22.593Z  sell   90.409200
+VET/USDT    2022-03-30T17:03:02.331Z   buy   89.212788
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-02-24T19:18:03.861Z  sell   69.861164
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 2.73959996
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+on reste sur la même crypto
+
+
+
+
+ la crypot à vendre est  VET/USDT
+
+
+
+
+ la crypot à vendre est  VET/USDT
+la crypot à acheter est  VET/USDT
+                       temps crypto vente crypto achat
+0 2022-03-31 03:02:47.871858     VET/USDT     VET/USDT
+
+
+ On reste sur la même crypto
+execution done
+première iteration  :  2022-03-31 11:02:03.042590
+horaire now 2022-03-31 11:02:22.840302
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   1.002686   0.991622  ...   1.004921   1.020611
+1 days 00:00:00   0.934112   1.011837  ...   1.004262   1.007631
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  TRX/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0607834936567684 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-30 08:00:00+00:00  0.931610  1.020385  ...  1.091791       sol_var
+2022-03-30 16:00:00+00:00  0.999105  0.976247  ...  1.029476       vet_var
+2022-03-31 00:00:00+00:00  1.003135  1.015653  ...  1.055839       the_var
+2022-03-31 08:00:00+00:00  1.001339  1.005013  ...  1.041053       the_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+164
+VET/USDT
+87
+SOL/USDT
+174
+TRX/USDT
+71
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-02-17T02:51:22.593Z  sell   90.409200
+VET/USDT    2022-03-30T17:03:02.331Z   buy   89.212788
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-02-24T19:18:03.861Z  sell   69.861164
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 2.73959996
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+vendage :  VET/USDT
+crypto achetée :  TRX/USDT
+
+
+
+
+ la crypot à vendre est  VET/USDT
+
+
+
+
+ la crypot à vendre est  VET/USDT
+la crypot à acheter est  TRX/USDT
+                       temps crypto vente crypto achat
+0 2022-03-31 11:03:02.494834     TRX/USDT     VET/USDT
+
+
+ Crypto à vendre  VET/USDT
+crypto à acheter TRX/USDT
+execution done
+première iteration  :  2022-03-31 19:02:03.487976
+horaire now 2022-03-31 19:02:23.579675
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   0.961487   0.986704  ...   0.988020   0.969035
+1 days 00:00:00   0.961056   0.963358  ...   0.974081   0.979021
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  THETA/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0673125956144824 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-30 16:00:00+00:00  0.999105  0.976247  ...  1.029476       vet_var
+2022-03-31 00:00:00+00:00  1.003135  1.015653  ...  1.055839       the_var
+2022-03-31 08:00:00+00:00  0.958482  0.971498  ...  1.016385       sol_var
+2022-03-31 16:00:00+00:00  0.986021  0.996464  ...  1.015714       bch_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+164
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+72
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-02-17T02:51:22.593Z  sell   90.409200
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T11:03:02.378Z   buy   94.267080
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.00369716
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+vendage :  TRX/USDT
+crypto achetée :  THETA/USDT
+
+
+
+
+ la crypot à vendre est  TRX/USDT
+
+
+
+
+ la crypot à vendre est  TRX/USDT
+la crypot à acheter est  THETA/USDT
+                       temps crypto vente crypto achat
+0 2022-03-31 19:03:07.272349   THETA/USDT     TRX/USDT
+
+
+ Crypto à vendre  TRX/USDT
+crypto à acheter THETA/USDT
+execution done
+première iteration  :  2022-04-01 03:02:02.879323
+horaire now 2022-04-01 03:02:21.946502
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   0.924554   0.956457  ...   0.942885   0.932203
+1 days 00:00:00   0.927452   0.971429  ...   0.961398   0.941712
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  THETA/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0137647911132577 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-31 00:00:00+00:00  1.003135  1.015653  ...  1.055839       the_var
+2022-03-31 08:00:00+00:00  0.958482  0.971498  ...  1.016385       sol_var
+2022-03-31 16:00:00+00:00  0.965051  0.984612  ...  1.041181       bch_var
+2022-04-01 00:00:00+00:00  1.014976  0.962337  ...  1.014976       aav_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+165
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+73
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-03-31T19:03:07.158Z   buy   90.202500
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T19:02:51.440Z  sell   90.627738
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.33830742
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+on reste sur la même crypto
+
+
+
+
+ la crypot à vendre est  THETA/USDT
+
+
+
+
+ la crypot à vendre est  THETA/USDT
+la crypot à acheter est  THETA/USDT
+                       temps crypto vente crypto achat
+0 2022-04-01 03:02:45.183999   THETA/USDT   THETA/USDT
+
+
+ On reste sur la même crypto
+execution done
+première iteration  :  2022-04-01 11:02:03.388309
+horaire now 2022-04-01 11:02:24.089404
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   1.051724   0.976106  ...   0.965308   0.959759
+1 days 00:00:00   1.007589   0.948194  ...   0.935379   0.920303
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  AAVE/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0517241379310345 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-31 08:00:00+00:00  0.958482  0.971498  ...  1.016385       sol_var
+2022-03-31 16:00:00+00:00  0.965051  0.984612  ...  1.041181       bch_var
+2022-04-01 00:00:00+00:00  1.090338  0.991361  ...  1.090338       aav_var
+2022-04-01 08:00:00+00:00  0.976074  1.009401  ...  1.010989       bnb_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+73
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+165
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+73
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-03-30T17:02:43.674Z  sell   92.004900
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-03-31T19:03:07.158Z   buy   90.202500
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T19:02:51.440Z  sell   90.627738
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.33830742
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+vendage :  THETA/USDT
+crypto achetée :  AAVE/USDT
+
+
+
+
+ la crypot à vendre est  THETA/USDT
+
+
+
+
+ la crypot à vendre est  THETA/USDT
+la crypot à acheter est  AAVE/USDT
+                       temps crypto vente crypto achat
+0 2022-04-01 11:03:04.663534    AAVE/USDT   THETA/USDT
+
+
+ Crypto à vendre  THETA/USDT
+crypto à acheter AAVE/USDT
+execution done
+première iteration  :  2022-04-01 19:02:02.748160
+horaire now 2022-04-01 19:02:20.113167
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   1.183092   1.033295  ...   1.015576   1.013158
+1 days 00:00:00   1.141193   1.017395  ...   0.988212   0.984581
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  AAVE/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.1830917874396136 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-03-31 16:00:00+00:00  0.965051  0.984612  ...  1.041181       bch_var
+2022-04-01 00:00:00+00:00  1.090338  0.991361  ...  1.090338       aav_var
+2022-04-01 08:00:00+00:00  1.085069  1.042401  ...  1.085069       aav_var
+2022-04-01 16:00:00+00:00  1.062883  0.997464  ...  1.062883       aav_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+74
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+166
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+73
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-04-01T11:03:04.550Z   buy   90.722400
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-04-01T11:02:48.838Z  sell   90.585000
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T19:02:51.440Z  sell   90.627738
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.11032242
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+on reste sur la même crypto
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+la crypot à acheter est  AAVE/USDT
+                       temps crypto vente crypto achat
+0 2022-04-01 19:02:46.936631    AAVE/USDT    AAVE/USDT
+
+
+ On reste sur la même crypto
+execution done
+première iteration  :  2022-04-02 03:02:02.710220
+horaire now 2022-04-02 03:02:19.029318
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   1.083739   1.037015  ...   1.026169   1.023893
+1 days 00:00:00   1.181643   1.027956  ...   1.017999   1.011610
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  AAVE/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0837394771821 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-04-01 00:00:00+00:00  1.090338  0.991361  ...  1.090338       aav_var
+2022-04-01 08:00:00+00:00  1.085069  1.042401  ...  1.085069       aav_var
+2022-04-01 16:00:00+00:00  0.998775  0.994833  ...  1.017792       trx_var
+2022-04-02 00:00:00+00:00  1.005726  1.013220  ...  1.024789       ksm_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+74
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+166
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+73
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-04-01T11:03:04.550Z   buy   90.722400
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-04-01T11:02:48.838Z  sell   90.585000
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T19:02:51.440Z  sell   90.627738
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.11032242
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+on reste sur la même crypto
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+la crypot à acheter est  AAVE/USDT
+                       temps crypto vente crypto achat
+0 2022-04-02 03:02:45.771456    AAVE/USDT    AAVE/USDT
+
+
+ On reste sur la même crypto
+execution done
+première iteration  :  2022-04-02 11:02:02.718529
+horaire now 2022-04-02 11:02:21.333291
+iteration numéto :  0
+
+
+
+Les cryptos  :  ['AAVE/USDT', 'LUNA/USDT', 'MATIC/USDT', 'THETA/USDT', 'VET/USDT', 'SOL/USDT', 'TRX/USDT', 'EOS/USDT', 'BCH/USDT', 'LTC/USDT', 'LINK/USDT', 'XLM/USDT', 'ETH/USDT', 'BTC/USDT', 'UNI/USDT', 'ADA/USDT', 'DOT/USDT', 'KSM/USDT', 'BNB/USDT', 'XRP/USDT', 'DOGE/USDT', 'EGLD/USDT', 'ATOM/USDT', 'SHIB/USDT'] 
+
+Le nombre de crypto :   24
+
+
+
+Tableau computing
+                  AAVE/USDT  LUNA/USDT  ...  ATOM/USDT  SHIB/USDT
+delt_compt                             ...                      
+0 days 16:00:00   0.992650   1.015312  ...    1.02385   1.035892
+1 days 00:00:00   1.077093   1.058363  ...    1.04850   1.062671
+
+[2 rows x 24 columns]
+
+
+
+
+Le nom de la crypto avec computing:  THETA/USDT 
+Type de computing:  n-1 
+Valeur Max_var_computing: 1.0459714493104284 
+
+
+
+Tableau variation 
+                             aav_var   lun_var  ...   var_max  meilleur_var
+timestamp                                      ...                        
+2022-04-01 08:00:00+00:00  1.085069  1.042401  ...  1.085069       aav_var
+2022-04-01 16:00:00+00:00  0.998775  0.994833  ...  1.017792       trx_var
+2022-04-02 00:00:00+00:00  0.994274  1.020585  ...  1.057227       the_var
+2022-04-02 08:00:00+00:00  1.020165  1.039693  ...  1.039693       lun_var
+
+[4 rows x 26 columns]
+AAVE/USDT
+74
+LUNA/USDT
+216
+MATIC/USDT
+108
+THETA/USDT
+166
+VET/USDT
+88
+SOL/USDT
+174
+TRX/USDT
+73
+EOS/USDT
+69
+BCH/USDT
+39
+LTC/USDT
+52
+LINK/USDT
+71
+XLM/USDT
+50
+ETH/USDT
+332
+BTC/USDT
+370
+UNI/USDT
+381
+ADA/USDT
+180
+DOT/USDT
+168
+KSM/USDT
+247
+BNB/USDT
+85
+XRP/USDT
+62
+DOGE/USDT
+78
+EGLD/USDT
+46
+ATOM/USDT
+88
+SHIB/USDT
+1
+                            datetime  side        cost
+symbol                                                
+AAVE/USDT   2022-04-01T11:03:04.550Z   buy   90.722400
+LUNA/USDT   2022-03-30T10:02:44.727Z  sell   96.469100
+MATIC/USDT  2022-02-16T10:49:07.653Z  sell   27.858600
+THETA/USDT  2022-04-01T11:02:48.838Z  sell   90.585000
+VET/USDT    2022-03-31T11:02:46.631Z  sell   91.622800
+SOL/USDT    2022-02-25T03:19:20.728Z  sell   71.160000
+TRX/USDT    2022-03-31T19:02:51.440Z  sell   90.627738
+EOS/USDT    2022-02-27T19:28:34.512Z  sell   73.692000
+BCH/USDT    2022-02-06T10:13:29.978Z  sell   37.352000
+LTC/USDT    2022-02-10T02:26:36.399Z  sell   95.703000
+LINK/USDT   2022-01-31T17:53:31.965Z  sell   98.785400
+XLM/USDT    2021-12-25T19:43:04.350Z  sell  157.426600
+ETH/USDT    2022-02-03T18:04:11.143Z  sell   91.900224
+BTC/USDT    2022-02-05T10:09:57.716Z  sell   98.004499
+UNI/USDT    2022-02-28T11:30:53.969Z  sell   69.764100
+ADA/USDT    2022-02-28T19:32:11.168Z  sell   75.561600
+DOT/USDT    2022-01-26T01:34:04.647Z  sell   14.879700
+KSM/USDT    2022-03-29T13:55:53.614Z  sell    6.589700
+BNB/USDT    2022-02-15T18:46:49.290Z  sell   89.320500
+XRP/USDT    2022-02-20T11:03:24.669Z  sell   76.368100
+DOGE/USDT   2022-02-14T10:41:51.932Z  sell   83.318800
+EGLD/USDT   2022-02-13T18:39:35.043Z  sell   87.458800
+ATOM/USDT   2022-03-18T13:20:21.724Z  sell   74.856600
+SHIB/USDT   2022-03-18T14:17:31.961Z  sell   72.592346
+montant portefeuille en EUSDT 0.11032242
+montant portefeuille en BTC  8.01e-06
+montant portefeuille en ETH  3.62e-05
+vendage :  AAVE/USDT
+crypto achetée :  THETA/USDT
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+
+
+
+
+ la crypot à vendre est  AAVE/USDT
+la crypot à acheter est  THETA/USDT
+                       temps crypto vente crypto achat
+0 2022-04-02 11:03:04.662256   THETA/USDT    AAVE/USDT
+
+
+ Crypto à vendre  AAVE/USDT
+crypto à acheter THETA/USDT
+execution done

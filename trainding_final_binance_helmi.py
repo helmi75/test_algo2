@@ -1,19 +1,13 @@
 import pandas as pd
-import os
 import numpy as np
-import pickle
-import matplotlib.pyplot as plt
 from datetime import datetime
-from time import time
-from datetime import timedelta
-import plotly.express as px
-import plotly.graph_objects as go
-import base64
 import ccxt
-from fonctions import *
-import fonctions
-import time as tm
-from config import *
+from fonctions import last_crypto_buyed, algo_achat_vente, convert_time
+from fonctions import variation, meilleur_varaition, variation_computing
+from fonctions import coef_multi, fonction_cumul, fonction_tableau_var
+from fonctions import meilleur_var_computing, crypto_a_vendre
+#from fonctions import name_max_var_computing, nom_crypto_achat
+from config import apiKey, secret, market, delta_hour, type_computing 
 
 crypto = {}
 exchange = ccxt.binance({
@@ -33,6 +27,7 @@ temps = []
 comput_list = []
 
 # list of crypto to initialize
+print("Initialisation cryptos...")
 init_cryptos = [elm for elm in market if pd.DataFrame.from_dict(
     exchange.fetchMyTrades(elm)).shape[0] == 0]
 
@@ -68,8 +63,6 @@ for elm in market:
     crypto[x] = crypto[x].merge(variation(crypto[x]), on='timestamp', how='left')
     df_variation_computing = variation_computing(crypto[x], type_computing)
     comput_list.append(df_variation_computing)
-    #df_variation_computing = df_variation_computing.merge(xz , on='delt_compt' , how= 'left')
-    #print(crypto[x].merge(variation_computing(crypto[x], type_computing), on ='delt_compt', how ='left'))
     crypto[x]['coef_multi_'+x[:-5]] = coef_multi(crypto[x])
     crypto[x] = fonction_cumul(crypto[x], x)
 
@@ -78,7 +71,8 @@ tableau_var = meilleur_varaition(df_liste_var)
 concenate_computing = np.concatenate(comput_list, axis=1)
 print('\n\n\nLes cryptos  : ', market,
           '\n\nLe nombre de crypto :  ', np.shape(market)[0])
-df_computing = pd.DataFrame(concenate_computing, index=df_variation_computing.index, columns=market)
+df_computing = pd.DataFrame(concenate_computing, 
+                            index=df_variation_computing.index, columns=market)
 print('\n\n\nTableau computing\n', df_computing)
 
 if type_computing == ('n-2') or type_computing == ('n-1'):

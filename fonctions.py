@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import plotly.graph_objects as go
 from datetime import datetime
 from time import time
 from datetime import timedelta

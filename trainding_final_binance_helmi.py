@@ -6,7 +6,7 @@ from fonctions import last_crypto_buyed, algo_achat_vente, convert_time
 from fonctions import variation, meilleur_varaition, variation_computing
 from fonctions import coef_multi, fonction_cumul, fonction_tableau_var
 from fonctions import meilleur_var_computing, crypto_a_vendre
-#from fonctions import name_max_var_computing, nom_crypto_achat
+
 from config import apiKey, secret, market, delta_hour, type_computing 
 
 crypto = {}
@@ -27,7 +27,7 @@ temps = []
 comput_list = []
 
 # list of crypto to initialize
-print("Initialisation cryptos...")
+print("## Initialisation cryptos...")
 init_cryptos = [elm for elm in market if pd.DataFrame.from_dict(
     exchange.fetchMyTrades(elm)).shape[0] == 0]
 
@@ -38,10 +38,8 @@ for cypto_ini in init_cryptos:
     algo_achat_vente(exchange, initial, cypto_ini)
     initial = cypto_ini
 
-print("première iteration  : ", start_time)
-print("horaire now", datetime.now())
-print("iteration numéto : ", k)
-
+print("## Time : ", start_time)
+print("## Downloading data ...")
 comput_list = []
 num_exp = 0
 for elm in market:
@@ -56,7 +54,9 @@ for elm in market:
             print(" \n ERROR CONNEXTION fetch_ohlcv nbr : ", num_exp)
 
     crypto[x] = pd.DataFrame(ohlcv, columns=[
-                                 'timestamp', x[:-5]+'_open', 'high', 'low', x[:-5]+'_close', 'volume'])
+                                 'timestamp', x[:-5]+'_open',
+                                 'high', 'low', x[:-5]+'_close',
+                                 'volume'])
     crypto[x] = convert_time(crypto[x])
     crypto[x] = crypto[x][['timestamp', x[:-5]+'_open', x[:-5]+'_close']]
     crypto[x] = crypto[x].set_index('timestamp')
@@ -65,38 +65,33 @@ for elm in market:
     comput_list.append(df_variation_computing)
     crypto[x]['coef_multi_'+x[:-5]] = coef_multi(crypto[x])
     crypto[x] = fonction_cumul(crypto[x], x)
+print("## Data downloaded")
 
 df_liste_var = fonction_tableau_var(crypto)
 tableau_var = meilleur_varaition(df_liste_var)
 concenate_computing = np.concatenate(comput_list, axis=1)
-print('\n\n\nLes cryptos  : ', market,
-          '\n\nLe nombre de crypto :  ', np.shape(market)[0])
+print('## Cryptocurency loaded  : \n', market,
+      '\n## Number of cryptocurency :  ', np.shape(market)[0])
 df_computing = pd.DataFrame(concenate_computing, 
                             index=df_variation_computing.index, columns=market)
-print('\n\n\nTableau computing\n', df_computing)
-
+print("## Type computing ", type_computing)
 if type_computing == ('n-2') or type_computing == ('n-1'):
     max_var_computing, name_max_var_computing = meilleur_var_computing(
         df_computing, type_computing)
-    print('\n\n\n\nLe nom de la crypto avec computing: ', name_max_var_computing,
-              '\nType de computing: ', type_computing, '\nValeur Max_var_computing:', max_var_computing, '\n\n\n')
-    print('Tableau variation \n', tableau_var)
     nom_crypto_vente = crypto_a_vendre(exchange, market)
     algo_achat_vente(exchange, nom_crypto_vente, name_max_var_computing)
-    print('\n\n\n\n la crypot à vendre est ', nom_crypto_vente)
-    print('\n\n\n\n la crypot à vendre est ', nom_crypto_vente)
-    print('la crypot à acheter est ', name_max_var_computing)
+    print('## Crypto to sell : ', nom_crypto_vente)
+    print('## Crypto to buy : ', name_max_var_computing)
     k = k+1
     liste_principale.append(
             [datetime.now(), name_max_var_computing, nom_crypto_vente])
-    print(pd.DataFrame(liste_principale, columns=[
-              'temps', 'crypto vente', 'crypto achat']))
-
+    df_time_sell_buy = pd.DataFrame(liste_principale, columns=[
+                                    'temps', 'crypto vente', 'crypto achat'])
     if name_max_var_computing == nom_crypto_vente:
-        print('\n\n On reste sur la même crypto')
+        print('## Staying on the same cryptocurency')
     else:
-        print('\n\n Crypto à vendre ', nom_crypto_vente)
-        print('crypto à acheter', name_max_var_computing)
+        print('## Crypto to sell ', nom_crypto_vente)
+        print('## Crypto to buy', name_max_var_computing)
 
 else:
     print('nous sommes dans le else')
@@ -117,8 +112,8 @@ else:
               'temps', 'crypto vente', 'crypto achat']))
 
     if nom_crypto_achat == nom_crypto_vente:
-        print('On reste sur la même crypto')
+        print('## Staying on the same cryptocurency')
     else:
-        print('crypto à vendre ', nom_crypto_vente)
-        print('crypto à acheter', nom_crypto_achat)
-print("execution done")
+        print('## Crypto to sell ', nom_crypto_vente)
+        print('## Crypto to buy', nom_crypto_achat)      
+print("## Done")

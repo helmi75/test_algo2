@@ -274,21 +274,14 @@ def nom_crypto_achat_vente(tableau_var ):
 def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
 
     balence= exchange.fetchBalance ()
-    print('montant portefeuille en EUSDT',balence['total']['USDT'])
-    print('montant portefeuille en BTC ',balence['total']['BTC'])
-    print('montant portefeuille en ETH ',balence['total']['ETH'])
-
-
+    print('## Wallet amount (USDT)',balence['total']['USDT'])
     if (nom_crypto_achat == False) or (nom_crypto_achat == nom_crypto_vente):
-
-         print( 'on reste sur la même crypto' )
+         print( '## Staying on the same cryptocurency' )
          pass
     else :
         #Vendre
         sell = vente (exchange,  nom_crypto_vente , balence['total'])
         print ('vendage : ', nom_crypto_vente)
-
-
         tm.sleep(15)
 
         def acheter(exchange ,var2, balence_total, pourcentage):
@@ -340,14 +333,10 @@ def crypto_a_vendre(exchange, market):
             print("ERROR CONNEXTION RECUPERATION fetchmyTrades Crypto: ",name_crypto )
         df_hystoric_order[name_crypto_low]= pd.DataFrame.from_dict(x)
         index_dernier_ordre = df_hystoric_order[name_crypto_low].index.max()
-        print(name_crypto)
-        print(index_dernier_ordre)
-
         liste_df.append(df_hystoric_order[name_crypto_low].loc[index_dernier_ordre])
     pd.set_option('display.max_columns', None)
     df_log = pd.DataFrame(liste_df).set_index('symbol')
-    print(df_log[['datetime','side','cost']])
-
+    df_datetime_side_cost = df_log[['datetime','side','cost']]
     crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
     return crypto_a_vendre
 

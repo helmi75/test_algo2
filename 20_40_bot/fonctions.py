@@ -5,7 +5,7 @@ from datetime import timedelta
 import numpy as np
 import pandas as pd
 import time as tm
-
+import mysql.connector
 
 def generation_test(k,name_crypto,timestamp):
   import random
@@ -360,16 +360,48 @@ def last_crypto_buyed(exchange, market1):
       except KeyError:
         pass
 
-
-                         
-
-
-
-
 def sleep_time(sec):
     for elm in range(sec):
         print(elm)
         tm.sleep(sec)
 
+class ConnectBbd:
+    def __init__(self, host, port, user, password, database, auth_plugin):
+        self.host = host
+        self.port = port
+        self.user = user
+        self.password = password
+        self.database = database
+        self.auth_plugin =auth_plugin
+        self.cnx = mysql.connector.connect(host=self.host,
+                                    user=self.user,
+                                    password=self.password,
+                                    port=self.port,
+                                    database=self.database,
+                                    auth_plugin=self.auth_plugin)
+
+    def insert(self, data):
+      cursor =self.cnx.cursor()
+      query = "INSERT INTO  get_balence (dates, crypto_name, crypto_wallet,id_bot) VALUES  (%s, %s,%s,%s)"
+      cursor.execute(query, data)
+      self.cnx.commit()
+      cursor.close()
+      self.cnx.close()
+      return print("value added to database ",data)
+
+def get_wallet(exchange):
+  balence = exchange.fetch_balance()['total']
+  df_balence = pd.DataFrame.from_dict([balence]).transpose().rename(columns ={0 : "balence"})
+  df_balence = df_balence[df_balence['balence']>0]
+  crypto_index= [elm+"/USDT" for elm in df_balence['balence'].index]
+  crypto_index.remove('USDT/USDT')
+  print("\n\n\n",crypto_index)
+  crypto_index.remove('LUNC/USDT')
+  print("\n\n\n",crypto_index)
+  dict_balence_usdt = {}
+  for elm in crypto_index :
+    dict_balence_usdt[elm] = exchange.fetchTickers(elm)[elm]['ask']*exchange.fetch_balance()['total'][elm[:-5]]
+    tm.sleep(1)
+  return sum(dict_balence_usdt.values())
 
 

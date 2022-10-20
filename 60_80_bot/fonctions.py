@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import plotly.graph_objects as go
 from datetime import datetime
 from time import time
 from datetime import timedelta
@@ -274,30 +273,33 @@ def nom_crypto_achat_vente(tableau_var ):
 def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
 
     balence= exchange.fetchBalance ()
-    print('## Wallet amount (USDT)',balence['total']['USDT'])
+    print('montant portefeuille en EUSDT',balence['total']['USDT'])
+    print('montant portefeuille en BTC ',balence['total']['BTC'])
+    print('montant portefeuille en ETH ',balence['total']['ETH'])
+
+
     if (nom_crypto_achat == False) or (nom_crypto_achat == nom_crypto_vente):
-         print( '## Staying on the same cryptocurency' )
+
+         print( 'on reste sur la même crypto' )
          pass
     else :
-        #buy
+        #Vendre
         sell = vente (exchange,  nom_crypto_vente , balence['total'])
         print ('vendage : ', nom_crypto_vente)
+
+
         tm.sleep(15)
 
         def acheter(exchange ,var2, balence_total, pourcentage):
             montant_USDT = float(exchange.fetch_balance().get('USDT').get('free'))
-            dict = exchange.fetchTicker(var2)
-            last = dict['last']
-            #Prevent error divide by zero
-            while  last  == 0:
-                try:
-                    last = exchange.fetchTicker(var2)['last']
-                except:
-                    pass
-            buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/last)
+
+            dic = exchange.fetchTicker(var2)
+            dic['last']
+
+            buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/ dic['last'])
             return  buy
 
-        #sell
+        #achat
         while True :
             try :
                 acheter = acheter(exchange ,nom_crypto_achat, balence['total'],1)
@@ -337,10 +339,14 @@ def crypto_a_vendre(exchange, market):
             print("ERROR CONNEXTION RECUPERATION fetchmyTrades Crypto: ",name_crypto )
         df_hystoric_order[name_crypto_low]= pd.DataFrame.from_dict(x)
         index_dernier_ordre = df_hystoric_order[name_crypto_low].index.max()
+        print(name_crypto)
+        print(index_dernier_ordre)
+
         liste_df.append(df_hystoric_order[name_crypto_low].loc[index_dernier_ordre])
     pd.set_option('display.max_columns', None)
     df_log = pd.DataFrame(liste_df).set_index('symbol')
-    df_datetime_side_cost = df_log[['datetime','side','cost']]
+    print(df_log[['datetime','side','cost']])
+
     crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
     return crypto_a_vendre
 
@@ -354,6 +360,10 @@ def last_crypto_buyed(exchange, market1):
       except KeyError:
         pass
 
+def sleep_time(sec):
+    for elm in range(sec):
+        print(elm)
+        tm.sleep(sec)
 
 class ConnectBbd:
     def __init__(self, host, port, user, password, database, auth_plugin):
@@ -379,26 +389,13 @@ class ConnectBbd:
       self.cnx.close()
       return print("value added to database ",data)
 
-
-def sleep_time(sec):
-    for elm in range(sec):
-        print(elm)
-        tm.sleep(sec)
-
 def get_wallet(exchange):
   balence = exchange.fetch_balance()['total']
   df_balence = pd.DataFrame.from_dict([balence]).transpose().rename(columns ={0 : "balence"})
   df_balence = df_balence[df_balence['balence']>0]
   crypto_index= [elm+"/USDT" for elm in df_balence['balence'].index]
   crypto_index.remove('USDT/USDT')
-  print("\n\n\n",crypto_index)
-  crypto_index.remove('LUNC/USDT')
-  crypto_index.remove('ETHW/USDT')
-
-  print("\n\n\n",crypto_index)
   dict_balence_usdt = {}
   for elm in crypto_index :
     dict_balence_usdt[elm] = exchange.fetchTickers(elm)[elm]['ask']*exchange.fetch_balance()['total'][elm[:-5]]
-    tm.sleep(1)
   return sum(dict_balence_usdt.values())
-

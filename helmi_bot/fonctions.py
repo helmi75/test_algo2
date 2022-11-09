@@ -280,7 +280,7 @@ def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
          pass
     else :
         #buy
-        sell = vente (exchange,  nom_crypto_vente , balence['total'])
+        sell = vente(exchange,  nom_crypto_vente , balence['total'])
         print ('vendage : ', nom_crypto_vente)
         tm.sleep(15)
 
@@ -311,8 +311,23 @@ def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
 
 
 def vente (exchange, var1, balence_total) :
-     sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
-     return sell
+     sell_1 = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+     return sell_1
+
+def acheter_2(exchange ,var2, balence_total, pourcentage):
+            montant_USDT = float(exchange.fetch_balance().get('USDT').get('free'))
+            dict = exchange.fetchTicker(var2)
+            last = dict['last']
+            #Prevent error divide by zero
+            while  last  == 0:
+                try:
+                    last = exchange.fetchTicker(var2)['last']
+                except:
+                    pass
+            buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/last)
+            return  buy
+
+
 
 def sleep_time(sec):
     for elm in range(sec):
@@ -341,7 +356,14 @@ def crypto_a_vendre(exchange, market):
     pd.set_option('display.max_columns', None)
     df_log = pd.DataFrame(liste_df).set_index('symbol')
     df_datetime_side_cost = df_log[['datetime','side','cost']]
-    crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
+    global crypto_a_vendre
+    try :
+        balence= exchange.fetchBalance ()
+        crypto_a_vendre = df_log[df_log['side']=='buy'].index[0]
+    except IndexError as e:
+          print (f"# Warning  : {e} we buy BTC by default")
+          acheter_2(exchange ,"BTC/USDT", balence['total'],0.97)
+          cryptos_a_vendre = "BTC/USDT"
     return crypto_a_vendre
 
 def last_crypto_buyed(exchange, market1):
@@ -391,14 +413,14 @@ def get_wallet(exchange):
   df_balence = df_balence[df_balence['balence']>0]
   crypto_index= [elm+"/USDT" for elm in df_balence['balence'].index]
   crypto_index.remove('USDT/USDT')
-  print("\n\n\n",crypto_index)
   crypto_index.remove('LUNC/USDT')
   crypto_index.remove('ETHW/USDT')
-
-  print("\n\n\n",crypto_index)
   dict_balence_usdt = {}
   for elm in crypto_index :
-    dict_balence_usdt[elm] = exchange.fetchTickers(elm)[elm]['ask']*exchange.fetch_balance()['total'][elm[:-5]]
-    tm.sleep(1)
+    try:
+        dict_balence_usdt[elm] = exchange.fetchTickers(elm)[elm]['ask']*exchange.fetch_balance()['total'][elm[:-5]]
+        tm.sleep(1)
+    except :
+        print("# Attention  Too much request/min verifier la valeur du wallet ")
   return sum(dict_balence_usdt.values())
 

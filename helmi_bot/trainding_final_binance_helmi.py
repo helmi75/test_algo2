@@ -26,7 +26,7 @@ temps = []
 comput_list = []
 
 # list of crypto to initialize
-print("## Initialisation cryptos...")
+print("\n\n\n\n\n## Initialisation cryptos...")
 init_cryptos = [elm for elm in market if pd.DataFrame.from_dict(
     exchange.fetchMyTrades(elm)).shape[0] == 0]
 

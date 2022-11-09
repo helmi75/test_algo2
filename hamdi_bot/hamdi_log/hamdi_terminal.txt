@@ -9850,3 +9850,1188 @@ Traceback (most recent call last):
   File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
     sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
 TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666311344380&recvWindow=5000&symbol=QTUMUSDT&signature=bec868df8c907f81582284ff92b2cdca5a79fb1b641a2d5121bd091a3f0e1c44
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666743335994&recvWindow=5000&symbol=ADAUSDT&signature=20f3136b78bc814dae205073a9b6536725b4af998bb34269c4bf7ffa6d7b151f
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666772137089&recvWindow=5000&symbol=DOTUSDT&signature=e1955b8bf2c0dae0da81f2ecd687339a0360a167cf1e74ebdd797d230bbf1946
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666800934926&recvWindow=5000&symbol=XLMUSDT&signature=d5e8feb8433bdcf155d85b7b00ef86aa36dc041806405283a4a7bec33562f3d1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666829748830&recvWindow=5000&symbol=ONEUSDT&signature=c1befecdf42db556398d4bef98dba4312a5a9686c67215baed86b334c1a0829a
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666858549896&recvWindow=5000&symbol=HBARUSDT&signature=95200fd86d45968beab2e766a04667a0922ec3ccf3b4cbff8df27c63f7263572
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666887343768&recvWindow=5000&symbol=BATUSDT&signature=cfac81e5917f2a0bd8f179536b79961ecb3b1586a7a683513bd7896a5472007d
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1666973736722&recvWindow=5000&symbol=ETHUSDT&signature=afdfda05bc55e0ce87e5b8d32b0184d29d33dfc55428157c2968737c708b73a6
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667002546047&recvWindow=5000&symbol=BATUSDT&signature=7664e26b875dcd8e73e3eed2c508d8d395d3e0861364eaab2e9f38a0144f4c19
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667031335380&recvWindow=5000&symbol=UNIUSDT&signature=7fe487d0122853792ebca3233cdc59e3c26bd9e58f5b52cc2295879776b6903b
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667060134715&recvWindow=5000&symbol=ETHUSDT&signature=f9b5effeb64975627db64713ae8a759e573acf510fe65c529aece5d8f5cbddda
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667088948758&recvWindow=5000&symbol=WAVESUSDT&signature=348e38b1a1a44b5b8d6eef70a9a66c4df164bf6dcdb08b9104fe0a05e97bab14
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667117735206&recvWindow=5000&symbol=ETHUSDT&signature=d2f030706467157c23a4d691167cfade3fb1cbcc48cd3942719e85f2e8bbca69
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667146535414&recvWindow=5000&symbol=UNIUSDT&signature=9b35a63b9c1c6197d8a6c67dbe5a511727e327813e730c78c2dcdc0bafda3327
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667232934757&recvWindow=5000&symbol=DOTUSDT&signature=34c7a8d5dd0fd0372c9f3d8928ebbdc8323d86af814634b7e906078217948ed3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667261747630&recvWindow=5000&symbol=HBARUSDT&signature=b36f8a43bf479015b63251a3379506553b87db9c88856b6e58407024fc4ca5bc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667290544907&recvWindow=5000&symbol=WAVESUSDT&signature=3ab34023b744863faf5f9c8f09b090b6f34705c0f1133faa66ca24c465567083
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667319348931&recvWindow=5000&symbol=WAVESUSDT&signature=b4a9ab6e31de3b6fbf4c03bb1b2988a7d7f2e1c3ebad5cc30966a23065a9305e
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667405734275&recvWindow=5000&symbol=ETHUSDT&signature=c5a685e882c8d27d40b77437128fb2287fd9f862b314aac055b22bae7dce7949
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667434548196&recvWindow=5000&symbol=WAVESUSDT&signature=442c33cac3bfa2d841ab2e9db4993272bbcc25501807ddcc732ff5594a5a9fbc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667463335157&recvWindow=5000&symbol=ETHUSDT&signature=d842f21e6df2460a7a27631b894beab49636c372ba0fc2f814e3414d8002576b
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667492143504&recvWindow=5000&symbol=BATUSDT&signature=bb2acfe3907ae9583679434910aca862088be89316e6e00c97f4037ab59f083a
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667520936204&recvWindow=5000&symbol=ADAUSDT&signature=e3a1211c4f44b0f5371c26649c186be0a1a53c9049a3b5b4ad4cdaabe6f9913f
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667549733847&recvWindow=5000&symbol=XLMUSDT&signature=6803f6cc817b3e05da56f646407d848bd14fa3179c332997f965ca280e867c26
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667578540267&recvWindow=5000&symbol=FLOWUSDT&signature=82fc277c92599c3dc472caacb06101aa8f0c70bb10618dfe3b3869fd62125649
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667607334237&recvWindow=5000&symbol=XLMUSDT&signature=5db5c47378acb3f942a7719ebd40cd4168541f18b7a363f07a7d1c1ac1353450
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667636134862&recvWindow=5000&symbol=XLMUSDT&signature=61dbca0d87c283bc5cafc3fd53bc6c01a28e40938879ee2f70f21916d7ca6487
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667664936232&recvWindow=5000&symbol=ADAUSDT&signature=820f9af544f3fd149dc141b1cc2d96bda0cd8a0058a35aea239d9b3cbc68e9d3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667693737399&recvWindow=5000&symbol=LINKUSDT&signature=2051d5813d085c3a57125e97e6083cfe18f256fc633bdc06129f25dca81809ca
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667837735386&recvWindow=5000&symbol=XLMUSDT&signature=a628da327d673dc1b5d38ba8018c707154c530895a7be8f3765d608be17c8acd
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 647, in fetch
+    response.raise_for_status()
+  File "/home/anisse9/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.binance.com/api/v3/myTrades?timestamp=1667866543230&recvWindow=5000&symbol=DOGEUSDT&signature=b75516d7bea4eef5e5c20cf144989c187f2bd8ac212cf150476fd26cc9d2756b
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 40, in <module>
+    initial = last_crypto_buyed(exchange, market)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 355, in last_crypto_buyed
+    etat= pd.DataFrame.from_dict(exchange.fetchMyTrades(elm)).iloc[-1:] 
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 2967, in fetch_my_trades
+    response = getattr(self, method)(self.extend(request, params))
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 489, in inner
+    return entry(_self, **inner_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4998, in request
+    response = self.fetch2(path, api, method, params, headers, body, config, context)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 536, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/base/exchange.py", line 663, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "/usr/local/lib/python3.8/dist-packages/ccxt/binance.py", line 4925, in handle_errors
+    raise DDoSProtection(self.id + ' ' + str(code) + ' ' + reason + ' ' + body)
+ccxt.base.errors.DDoSProtection: binance 429 Too Many Requests {"code":-1003,"msg":"Too much request weight used; current limit is 1200 request weight per 1 MINUTE. Please use the websocket for live updates to avoid polling the API."}
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable
+AAVE/USDT
+montant portefeuille en EUSDT 0.0
+montant portefeuille en BTC  0.00147675
+montant portefeuille en ETH  0.0
+Traceback (most recent call last):
+  File "./hamdi_bot/trainding_final_binance_hamdi.py", line 43, in <module>
+    algo_achat_vente(exchange, initial, cypto_ini)
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 287, in algo_achat_vente
+    sell = vente (exchange,  nom_crypto_vente , balence['total'])
+  File "/home/anisse9/test_algo2/binance/cocotier/hamdi_bot/fonctions.py", line 316, in vente
+    sell = exchange.create_market_sell_order (var1,balence_total[var1[:-5]])
+TypeError: 'NoneType' object is not subscriptable

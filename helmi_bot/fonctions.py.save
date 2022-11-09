@@ -282,30 +282,53 @@ def  algo_achat_vente(exchange , nom_crypto_vente, nom_crypto_achat):
         #buy
         sell = vente(exchange,  nom_crypto_vente , balence['total'])
         print ('vendage : ', nom_crypto_vente)
-        tm.sleep(15)
+        tm.sleep(1)
+        print("fin de sleep")
+        def
 
-        def acheter(exchange ,var2, balence_total, pourcentage):
+ acheter(exchange ,var2, balence_total, pourcentage):
+            print("dans lachat")
+            print(f" var  :{ var2}  \n balence :{balence_total} \n pourcentage : {pourcentage}")
             montant_USDT = float(exchange.fetch_balance().get('USDT').get('free'))
+            print( f"\nmontant_USDT :{montant_USDT}")
             dict = exchange.fetchTicker(var2)
+            
             last = dict['last']
+            print(f"last : {last}")
             #Prevent error divide by zero
             while  last  == 0:
                 try:
                     last = exchange.fetchTicker(var2)['last']
+                    print(f"last du try  {last}")
                 except:
+                    print( "nous somme dans le except dacheter")
                     pass
             buy = exchange.create_market_buy_order (var2 ,(montant_USDT*pourcentage)/last)
             return  buy
-
+ 
         #sell
+        print("avant entrer dans le while true")
         while True :
+            print("juste après while true")
             try :
+                print("dans le try")
+                print(f" nom crypto achat  : {nom_crypto_achat}  balence : {balence['total']}")
                 acheter = acheter(exchange ,nom_crypto_achat, balence['total'],1)
+                print('crypto achetée : ',nom_crypto_achat )
                 break
             except :
                 print('EXECUTION AVEC EXEPTION', nom_crypto_achat)
                 acheter = acheter(exchange ,nom_crypto_achat, balence['total'],0.97)
                 break
+        """
+        #sell
+        try :
+             acheter = acheter(exchange ,nom_crypto_achat, balence['total'],1)
+             print('crypto achetée : ',nom_crypto_achat )
+        except :
+             print('EXECUTION AVEC EXEPTION', nom_crypto_achat)
+             acheter = acheter(exchange ,nom_crypto_achat, balence['total'],0.97)
+        """
 
 
 def vente (exchange, var1, balence_total) :
